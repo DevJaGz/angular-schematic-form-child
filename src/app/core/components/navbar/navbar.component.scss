@@ -1,0 +1,83 @@
+@import "_colors";
+
+@mixin shadow {
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+}
+
+@mixin glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  // @include glass;
+  section {
+    .brand {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      margin-right: 32px;
+      &:hover .brand-img {
+        background-color: $white;
+      }
+      &:hover .brand-name {
+        background-color: $white;
+      }
+      &-img {
+        cursor: pointer;
+        transition: all 0.15s ease;
+        $img-round-size: 36px;
+        width: $img-round-size;
+        height: $img-round-size;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $white-snow;
+        border-radius: 50%;
+        // @include shadow;
+
+        z-index: 2;
+        img {
+          max-width: 30px;
+        }
+      }
+      &-name {
+        cursor: pointer;
+        transition: all 0.15s ease;
+        background-color: $white-snow;
+        font-size: 14px;
+        line-height: 2;
+        font-weight: 600;
+        padding-left: 10px;
+        padding-right: 8px;
+        border-top-right-radius: 999px;
+        border-bottom-right-radius: 999px;
+        transform: translateX(-8px);
+        z-index: 1;
+        color: map-get($dark, 100);
+        user-select: none;
+        // @include shadow;
+      }
+    }
+  }
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+  color: $white-snow;
+  transition: all 0.15s ease;
+  &:hover {
+    color: $white;
+  }
+}

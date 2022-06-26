@@ -1,0 +1,10 @@
+main {
+  $padding-width: 40px;
+  $padding-height: 20px;
+  padding-left: $padding-width;
+  padding-right: $padding-width;
+  padding-top: $padding-height;
+  padding-bottom: $padding-height;
+  height: 100%;
+  width: 100%;
+}

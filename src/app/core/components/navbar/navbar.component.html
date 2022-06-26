@@ -1,6 +1,20 @@
 <nav>
   <section>
-    <div class="brand">Brand</div>
+    <div class="brand">
+      <div class="brand-img">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/768px-Angular_full_color_logo.svg.png"
+          alt="brand-logo"
+        />
+      </div>
+      <div class="brand-name">ngular</div>
+    </div>
   </section>
-  <section>Menu</section>
+  <section>
+    <ul>
+      <li *ngFor="let menuItem of menuItems">
+        {{ menuItem.label }}
+      </li>
+    </ul>
+  </section>
 </nav>

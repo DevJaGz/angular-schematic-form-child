@@ -4,9 +4,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CoreComponent } from './core.component';
 import { RouterModule } from '@angular/router';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [NavbarComponent, CoreComponent, SidebarComponent],
+  declarations: [NavbarComponent, CoreComponent, SidebarComponent, FooterComponent],
   imports: [CommonModule, RouterModule],
 })
 export class CoreModule {

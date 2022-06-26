@@ -1,0 +1,8 @@
+@import "_colors";
+
+footer {
+  background-color: map-get($dark, 90);
+  height: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
