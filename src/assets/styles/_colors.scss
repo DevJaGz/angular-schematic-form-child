@@ -1,6 +1,19 @@
-$dark-gray: #2f2e3e;
+$dark-gray: #181920;
 $disable: #565666;
 $white-snow: #d7d6e5;
 
-$background: $dark-gray;
-$color: $white-snow;
+$background-dark: $dark-gray;
+$color-dark: $white-snow;
+
+$dark: (
+  10: lighten($dark-gray, 90%),
+  20: lighten($dark-gray, 80%),
+  30: lighten($dark-gray, 70%),
+  40: lighten($dark-gray, 60%),
+  50: lighten($dark-gray, 50%),
+  60: lighten($dark-gray, 40%),
+  70: lighten($dark-gray, 30%),
+  80: lighten($dark-gray, 20%),
+  90: lighten($dark-gray, 10%),
+  100: $dark-gray,
+);
