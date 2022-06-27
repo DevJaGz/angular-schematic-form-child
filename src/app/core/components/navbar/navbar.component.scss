@@ -17,6 +17,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 24px 16px;
+  font-size: 16px;
   // @include glass;
   section {
     .brand {
@@ -52,8 +53,7 @@ nav {
         cursor: pointer;
         transition: all 0.15s ease;
         background-color: $white-snow;
-        font-size: 14px;
-        line-height: 2;
+        line-height: 1.6;
         font-weight: 600;
         padding-left: 10px;
         padding-right: 8px;
