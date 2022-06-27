@@ -16,10 +16,7 @@
 nav {
   display: flex;
   align-items: center;
-  height: 54px;
-  padding-left: 16px;
-  padding-right: 16px;
-
+  padding: 24px 16px;
   // @include glass;
   section {
     .brand {
