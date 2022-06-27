@@ -41,7 +41,7 @@ $width-active: 8px;
     display: block;
     opacity: 0;
     transform: scaleX(0);
-    transition: transform 0.25s ease;
+    transition: transform 0.2s ease;
     width: 100%;
     border-bottom: 2px solid map-get($dark, 80);
   }
