@@ -1,8 +1,28 @@
 @import "_colors";
 
 footer {
-  background-color: map-get($dark, 90);
-  height: 200px;
+  background-color: $white-snow;
+  height: 300px;
   padding-top: 10px;
   padding-bottom: 10px;
+  position: relative;
+  color: map-get($dark, 100);
+  &::before {
+    background-color: $white-snow;
+    $height: 30px;
+    content: attr(data-before-content);
+    padding: 5px calc($height * 2);
+    border-top-left-radius: calc($height * 1000);
+    border-top-right-radius: calc($height * 1000);
+    height: $height;
+    position: absolute;
+    top: -$height;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    white-space: nowrap;
+  }
 }
