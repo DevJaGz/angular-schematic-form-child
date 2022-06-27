@@ -1,6 +1,6 @@
 <nav>
   <section>
-    <div class="brand">
+    <div class="brand" routerLink="/">
       <div class="brand-img">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/768px-Angular_full_color_logo.svg.png"
@@ -12,7 +12,13 @@
   </section>
   <section>
     <ul>
-      <li *ngFor="let menuItem of menuItems">
+      <li
+        *ngFor="let menuItem of menuItems"
+        [routerLink]="menuItem.link"
+        routerLinkActive="menu-item-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="menu-item-link"
+      >
         {{ menuItem.label }}
       </li>
     </ul>

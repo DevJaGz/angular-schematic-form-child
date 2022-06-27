@@ -68,12 +68,14 @@ nav {
   }
 }
 
+ul {
+  display: flex;
+  li + li {
+    margin-left: 2em;
+  }
+}
+
 li {
   list-style-type: none;
-  cursor: pointer;
   color: $white-snow;
-  transition: all 0.15s ease;
-  &:hover {
-    color: $white;
-  }
 }
